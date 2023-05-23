@@ -13,21 +13,26 @@ app.get('/',(req,resp)=>{
     ///    resp.end()
     ///})
     resp.render('home',{
-        tittle:'简历解析'
+        tittle:'简历解析|首页'
     })
 })
 
 app.get('/all-resume',async(req,resp)=>{
+    const infos=[
+        {img:'/static/upload/pic/杨海纳.jpg',tag:'211',name:'nny',age:18,edu:'whut',work:'none',content:'none'},
+        {img:'/static/upload/pic/杨海纳.jpg',tag:'211',name:'nny',age:18,edu:'whut',work:'none',content:'none'},
+    ]
     resp.render('all-resume',{
-        tittle:'简历解析'
+        tittle:'简历解析|人才库',infos:infos
     })
     const data=await util.read('pages/all-resume.html')
     resp.end(data);
 })
 
+
 app.get('/job-discription',async(req,resp)=>{
     resp.render('jd',{
-        tittle:'简历解析'
+        tittle:'简历解析|人岗匹配'
     })
 
 })

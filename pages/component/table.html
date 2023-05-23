@@ -1,52 +1,41 @@
-<table class="table is-fullwidth is-hoverable"  ;">
+
+<table class="table is-fullwidth is-hoverable";">
     <thead>
-      <tr>
-      <th>姓名</th>
-      <th>毕业院校</th>
-      <th>技能</th>
-      <th>点击查看</th>
-    </tr>
+      <th>基本信息</th>
+      <th>年龄</th>
+      <th>教育经历</th>
+      <th>工作经历</th>
+      <th>查看简历</th>
     </thead>
     <tbody>
-      <tr>
-        <td>nana</td>
-        <td>whut</td>
-        <td>eat</td>
+      <% infos.forEach(info =>{  %>
+        <tr>
+          <td>
+            <div class="columns is-gapless">
+              <div class="column is-2">
+                <figure class="image is-32x32">
+                  <img src=<%= info.img %> class="is-rounded">
+                </figure>
+              </div>
+              <div class="column is-1">
+                <p class="tile is-3"><%= info.name %></p>
+                <span class="tag is-primary is-light"><%= info.tag %></span>
+              </div>
+          </div>
+          </td>
+        <td>
+          <%= info.age %>
+        </td>
+        <td>
+          <%= info.edu %>
+        </td>
+        <td>
+          <%= info.work %>
+        </td>
         <td>
           <% include resume.html %>
         </td>
-      </tr>
-      <tr>
-        <td>nana</td>
-        <td>whut</td>
-        <td>eat</td>
-        <td>
-            <% include resume.html %>
-          </td>
-      </tr>
-      <tr>
-        <td>nana</td>
-        <td>whut</td>
-        <td>eat</td>
-        <td>
-            <% include resume.html %>
-          </td>
-      </tr>
-      <tr>
-        <td>nana</td>
-        <td>whut</td>
-        <td>eat</td>
-        <td>
-            <% include resume.html %>
-          </td>
-      </tr>
-      <tr>
-        <td>nana</td>
-        <td>whut</td>
-        <td>eat</td>
-        <td>
-            <% include resume.html %>
-          </td>
-      </tr>
+        </tr> 
+      <% })  %>
     </tbody>
   </table>

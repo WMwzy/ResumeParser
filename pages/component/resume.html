@@ -1,188 +1,29 @@
- 
-      <!--<span class="icon tile is-vertical">
-        <ion-icon name="caret-back-outline tile is-child"></ion-icon>
-        <p>hhh</p>
-      </span>-->
-      <!--<div class="modal-background" onclick="hide('.modal_resume')">
-        </div>
-        <div class="modal-content">
-          
-            <div class="columns box">
-              <div class="column is-half">
-                <div class="content">
-                  <ul>
-                    <li><strong>姓名:</strong> 杨海纳</li>
-                    <li><strong>性别:</strong> 女</li>
-                  </ul>
-                </div>
+     <button id="myBtn" class="button is-primary is-light is-small" onclick="showResume()">点击查看</button>
+      <div id="myModal">
+        <div class="modal-content" id="Mycontent">
+          <span class="close" onclick="hideResume()">&times;</span>
+          <div style="margin:3% "class="tile is-ancestor" >
+              <div class="tile  is-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
               </div>
-              <div class="column is-half">
-                <div class="content">
-                  <ul>
-                    <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-                    <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close" onclick="hide('.modal_resume')"></button>
-      </div>-->
-      <div style="display:none"class="tile is-ancestor" >
-        <div class="tile  is-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-        </div>
-        <div class="card is-parent tile is-vertical">
-          <header class="columns  content ">
-            <div class="column is-2">
-              <figure class="image is-64x64">
-                <img src="../../static/upload/pic/杨海纳.jpg">
-              </figure>
-            </div>
-            <div class="column">
-                <ul>
-                  <li>
-                    <strong>姓名:</strong>yhn
-                  </li>
-                  <li>
-                    <strong>姓名:</strong>yhn
-                  </li>
-                </ul>
-            </div>
-            <div class="column">
-              <ul>
-                <li>
-                  <strong>姓名:</strong>yhn
-                </li>
-                <li>
-                  <strong>姓名:</strong>yhn
-                </li>
-              </ul>
-            </div>
-            <div class="column">
-              <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                  <button class="button dropbtn" aria-haspopup="true" aria-controls="dropdown-menu3" onclick="document.querySelector('.dropdown').classList.add('is-active');">
-                    <span>加入分组</span>
-                    <span class="icon is-small">
-                      <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                  <div class="dropdown-content">
-                    <a href="#" class="dropdown-item">
-                      Overview
-                    </a>
-                    <a href="#" class="dropdown-item">
-                      Modifiers
-                    </a>
-                    <a href="#" class="dropdown-item">
-                      Elements
-                    </a>
-                    <a href="#" class="dropdown-item">
-                      Components
-                    </a>
-                    <a href="#" class="dropdown-item">
-                      Layout
-                    </a>
-                    <hr class="dropdown-divider">
-                    <a href="#" class="dropdown-item">
-                      More
-                    </a>
+              <div class="card is-parent tile is-vertical">
+                <header class="columns  content ">
+                  <div class="column is-2">
+                    <figure class="image is-64x64">
+                      <img src="../../static/upload/pic/杨海纳.jpg">
+                    </figure>
                   </div>
-                </div>
-              </div>
-            </div>
-          </header>
-          <div class="card-content">
-            <div class="tabs ">
-              <ul>
-                <li class="is-active"><a>简历原件</a></li>
-                <li><a>基本信息</a></li>
-              </ul>
-            </div>
-            <div class="tab_con">
-              <div class="item" style="display: block;">
-                hhhhhh
-              </div>
-              <div class="item" style="display:none;">
-                <% include resume_tabcontent.html %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-right</title><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
-        </div>
-      </div>
-    <!--<div class="tile is-ancestor">
-      <div class="tile is-vertical is-8">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-primary">
-              <p class="title">Vertical...</p>
-              <p class="subtitle">Top tile</p>
-            </article>
-            <article class="tile is-child notification is-warning">
-              <p class="title">...tiles</p>
-              <p class="subtitle">Bottom tile</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-info">
-              <p class="title">Middle tile</p>
-              <p class="subtitle">With an image</p>
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/640x480.png">
-              </figure>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-danger">
-            <p class="title">Wide tile</p>
-            <p class="subtitle">Aligned with the right tile</p>
-            <div class="content">
-               
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-success">
-          <div class="content">
-            <p class="title">Tall tile</p>
-            <p class="subtitle">With even more content</p>
-            <div class="content">
-              
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>-->
-
-
-    <button id="myBtn" class="is-primary">Open Modal</button>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content" id="Mycontent">
-        <span class="close">&times;</span>
-        <div style="margin:3% "class="tile is-ancestor" >
-            <div class="tile  is-1">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-            </div>
-            <div class="card is-parent tile is-vertical">
-              <header class="columns  content ">
-                <div class="column is-2">
-                  <figure class="image is-64x64">
-                    <img src="../../static/upload/pic/杨海纳.jpg">
-                  </figure>
-                </div>
-                <div class="column">
+                  <div class="column">
+                      <ul>
+                        <li>
+                          <strong>姓名:</strong>yhn
+                        </li>
+                        <li>
+                          <strong>姓名:</strong>yhn
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="column">
                     <ul>
                       <li>
                         <strong>姓名:</strong>yhn
@@ -191,73 +32,63 @@
                         <strong>姓名:</strong>yhn
                       </li>
                     </ul>
-                </div>
-                <div class="column">
-                  <ul>
-                    <li>
-                      <strong>姓名:</strong>yhn
-                    </li>
-                    <li>
-                      <strong>姓名:</strong>yhn
-                    </li>
-                  </ul>
-                </div>
-                <div class="column">
-                  <div class="dropdown is-hoverable">
-                    <div class="dropdown-trigger">
-                      <button class="button dropbtn" aria-haspopup="true" aria-controls="dropdown-menu3" onclick="document.querySelector('.dropdown').classList.add('is-active');">
-                        <span>加入分组</span>
-                        <span class="icon is-small">
-                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                      <div class="dropdown-content">
-                        <a href="#" class="dropdown-item">
-                          Overview
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          Modifiers
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          Elements
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          Components
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          Layout
-                        </a>
-                        <hr class="dropdown-divider">
-                        <a href="#" class="dropdown-item">
-                          More
-                        </a>
+                  </div>
+                  <div class="column">
+                    <div class="dropdown is-hoverable">
+                      <div class="dropdown-trigger">
+                        <button class="button dropbtn" aria-haspopup="true" aria-controls="dropdown-menu3" onclick="document.querySelector('.dropdown').classList.add('is-active');">
+                          <span>加入分组</span>
+                          <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                        <div class="dropdown-content">
+                          <a href="#" class="dropdown-item">
+                            Overview
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            Modifiers
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            Elements
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            Components
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            Layout
+                          </a>
+                          <hr class="dropdown-divider">
+                          <a href="#" class="dropdown-item">
+                            More
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </header>
-              <div class="card-content">
-                <div class="tabs ">
-                  <ul>
-                    <li class="is-active"><a>简历原件</a></li>
-                    <li><a>基本信息</a></li>
-                  </ul>
-                </div>
-                <div class="tab_con">
-                  <div class="item" style="display: block;">
-                    hhhhhh
+                </header>
+                <div class="card-content">
+                  <div class="tabs ">
+                    <ul>
+                      <li class="is-active"><a>简历原件</a></li>
+                      <li><a>基本信息</a></li>
+                    </ul>
                   </div>
-                  <div class="item" style="display:none;">
-                    <% include resume_tabcontent.html %>
+                  <div class="tab_con">
+                    <div class="item" style="display: block;">
+                      <p>很好</p>
+                    </div>
+                    <div class="item" style="display:none;">
+                      <% include resume_tabcontent.html %>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="tile is-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-right</title><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+              </div>
             </div>
-            <div class="tile is-1">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-right</title><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
-            </div>
-          </div>
-    
+      </div>
     </div>

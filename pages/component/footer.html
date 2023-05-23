@@ -1,5 +1,4 @@
 
-
 </body>
 <script type="text/javascript" src="/static/js/tab.js"></script>
 <script> 
@@ -12,11 +11,13 @@
      function hide(namee) { 
       document.querySelector(namee).classList.remove("is-active")
      }
-     function showResume(){
-      document.getElementById("myModal").style.display="";
-     }
      function hideResume() {
       document.getElementById("myModal").style.display = "none";
+       }
+       function showResume(){
+        console.log('ok');
+        document.getElementById('myModal').style.display='block';
+        document.getElementById('topNavbar').style.display='none';
        }
 </script>
 </html>

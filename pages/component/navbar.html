@@ -3,53 +3,39 @@
     <head>
         <title><%= tittle%></title>
         <link rel="stylesheet" href="/static/css/style.css" type="text/css">
-
     </head>
     <body>
-
-<div class="box" style="background-color:hsl(0, 0%, 96%) ;">
-            <nav class="navbar is-light" role="navigation" aria-label="main navigation" >
-                <div class="navbar-brand">
-                  <a class="navbar-item" >
-                    
-                  </a>
-                  <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                  </a>
-                </div>
+      <div style="background-color:hsl(0, 0%, 96%) ;">
+            <nav class="navbar is-light" id="top_navbar" role="navigation" aria-label="main navigation" >
                 <div id="navbarBasicExample" class="navbar-menu">
                   <div class="navbar-start">
+                    <a class="navbar-item" >
+                      <img id="logo" src="../../static/upload/pic/1111.png">
+                    </a>
                     <a class="navbar-item" onclick="jump('/')">
                       首页
-                    </a>
-
-                         
+                    </a>  
                     <a class="navbar-item" onclick="jump('/all-resume')">
                       人才库
                     </a>
-
-                      <a class="navbar-item" onclick="jump('/job-discription')">
-                        人岗匹配
-                      </a>
-                      
+                    <a class="navbar-item" onclick="jump('/job-discription')">
+                      人岗匹配
+                    </a>
+                    <a class="navbar-item">
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>folder-upload-outline</title><path d="M20 18H4V8H20M20 6H12L10 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V8A2 2 0 0 0 20 6M16 17H14V13H11L15 9L19 13H16Z" /></svg>
+                    </a>
                   </div>
-              
                   <div class="navbar-end">
                     <div class="navbar-item">
                       <div class="buttons">
-                        
                         <a class="button is-primary">
                             <strong>登录</strong>
                         </a>
-                        <a class="navbar-item" onclick="jump('/')">
-                          <% include upload.html %>   
-                        </a>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </nav>
 </div>
-        <!--</div>-->
+
