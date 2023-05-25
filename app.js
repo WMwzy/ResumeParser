@@ -19,8 +19,8 @@ app.get('/',(req,resp)=>{
 
 app.get('/all-resume',async(req,resp)=>{
     const infos=[
-        {img:'/static/upload/pic/杨海纳.jpg',tag:'211',name:'nny',age:18,edu:'whut',work:'none',content:'none'},
-        {img:'/static/upload/pic/杨海纳.jpg',tag:'211',name:'nny',age:18,edu:'whut',work:'none',content:'none'},
+        {img:'/static/upload/pic/杨海纳.jpg',tag:'1',name:'1',age:1,edu:'1',work:'1',content:'1'},
+        {img:'/static/upload/pic/杨海纳.jpg',tag:'2',name:'2',age:18,edu:'2',work:'2',content:'2'},
     ]
     resp.render('all-resume',{
         tittle:'简历解析|人才库',infos:infos

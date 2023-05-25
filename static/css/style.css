@@ -44,8 +44,6 @@
 }
 
   .svg{
-    width: 70px;
-    border-radius: 1em;
-    background-color:hsl(171, 100%, 41%) ;
-    padding: 8% 27%;
+    width: 60px;
+    padding: 8% 20%;
   }
