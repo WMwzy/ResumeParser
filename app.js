@@ -1,7 +1,9 @@
+
 const express=require('express')
 const util=require('./util')
 const app=express()
 const path =require('path')
+
 app.use('/static',express.static(__dirname+'/static'))
 app.engine('.html',require('ejs').__express);
 app.set('views',path.join(__dirname,'pages'));
@@ -18,10 +20,24 @@ app.get('/',(req,resp)=>{
 })
 
 app.get('/all-resume',async(req,resp)=>{
-    const infos=[
-        {img:'/static/upload/pic/杨海纳.jpg',tag:'1',name:'1',age:1,edu:'1',work:'1',content:'1'},
-        {img:'/static/upload/pic/杨海纳.jpg',tag:'2',name:'2',age:18,edu:'2',work:'2',content:'2'},
-    ]
+    const infos=[{
+        img:"/static/upload/pic/杨海纳.jpg",
+        tag:"1",
+        name:"1",
+        age:"1",
+        edu:"1",
+        work:"1",
+        gender:"f",
+        tel:"133333",
+    },{
+        img:"/static/upload/pic/杨海纳.jpg",
+        tag:"2",
+        name:"2",
+        age:"1",
+        edu:"1",
+        work:"1",
+        gender:"f"
+    }];
     resp.render('all-resume',{
         tittle:'简历解析|人才库',infos:infos
     })

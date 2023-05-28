@@ -1,7 +1,5 @@
 
 const fs=require('fs')
-
-
 module.exports={
     read:(url)=>{
         return new Promise((resolve,rejects)=>{

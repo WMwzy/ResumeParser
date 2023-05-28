@@ -1,0 +1,21 @@
+[
+    {
+    "img":"/static/upload/pic/杨海纳.jpg",
+    "tag":"1",
+    "name":"1",
+    "age":1,
+    "edu":"1",
+    "work":"1",
+    "content":"1"
+    },
+    {
+        "img":"/static/upload/pic/杨海纳.jpg",
+        "tag":"2",
+        "name":"2",
+        "age":2,
+        "edu":"2",
+        "work":"2",
+        "content":"2"
+    }
+]
+
