@@ -21,14 +21,17 @@ app.get('/',(req,resp)=>{
 
 app.get('/all-resume',async(req,resp)=>{
     const infos=[{
+        id:"01",
         img:"/static/upload/pic/杨海纳.jpg",
-        tag:"1",
-        name:"1",
-        age:"1",
-        edu:"1",
-        work:"1",
+        tag:"工作稳定",
+        name:"张三",
+        age:20,
+        edu:"本科",
+        workYear:3,
+        school:"whut",
         gender:"f",
         tel:"133333",
+        hometow:"武汉"
     },{
         img:"/static/upload/pic/杨海纳.jpg",
         tag:"2",

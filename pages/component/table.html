@@ -1,4 +1,3 @@
-
 <table class="table is-fullwidth is-hoverable";">
     <thead>
       <th>基本信息</th>
@@ -10,26 +9,26 @@
     <tbody>
       <% infos.forEach(info =>{  %>
         <tr>
-          <td>
+          <td onclick="showResume()">
             <div class="columns is-gapless">
               <div class="column is-2">
                 <figure class="image is-32x32">
                   <img src=<%= info.img %> class="is-rounded">
                 </figure>
               </div>
-              <div class="column is-1">
+              <div class="column">
                 <p class="tile is-3"><%= info.name %></p>
                 <span class="tag is-primary is-light"><%= info.tag %></span>
               </div>
           </div>
           </td>
-        <td>
+        <td onclick="showResume()">
           <%= info.age %>
         </td>
-        <td>
+        <td onclick="showResume()">
           <%= info.edu %>
         </td>
-        <td>
+        <td onclick="showResume()">
           <%= info.work %>
         </td>
         <td>
@@ -37,7 +36,6 @@
           
         </td>
         </tr>
-         
       <% })  %>
     </tbody>
   </table>
